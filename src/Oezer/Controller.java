@@ -13,8 +13,9 @@ public class Controller {
 		jdbc = new JDBC();
 	}
 	
-	public static void main(String[] args) {
-		//jdbc.connect();
+	public static void main(String[] args) throws Exception {
 		new Controller();
+		jdbc.connect("root","Angelo0506");//Statisch für Testzwecke
+		
 	}
 }

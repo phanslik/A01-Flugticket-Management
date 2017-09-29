@@ -10,7 +10,7 @@ public class JDBC {
 
 	private static Connection con;
 
-	public void connect(String port, String db, String user, String pw) throws Exception {
+	public void connect(String user, String pw) throws Exception {//daweil noch statisch für Testzwecke
 
 		if (con != null)
 			return;
@@ -18,11 +18,15 @@ public class JDBC {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
 			throw new Exception("No database");
 		}
-
-		con = DriverManager.getConnection("jdbc:mysql://localhost/flightdata?autoReconnect=true&useSSL=false", user,
+		try {
+			con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/flightdata?autoReconnect=true&useSSL=false", user,
 				pw);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void close() {
