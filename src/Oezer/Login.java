@@ -37,7 +37,7 @@ public class Login extends JFrame implements ActionListener {
 	JButton submitButton;
 	public void initialize() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(500, 200, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -89,17 +89,17 @@ public class Login extends JFrame implements ActionListener {
 		contentPane.add(submitButton);
 		
 		databaseTextfield = new JTextField();
-		databaseTextfield.setBounds(89, 104, 116, 22);
+		databaseTextfield.setBounds(89, 104, 174, 22);
 		contentPane.add(databaseTextfield);
 		databaseTextfield.setColumns(10);
 		
 		userTextfield = new JTextField();
-		userTextfield.setBounds(89, 137, 116, 22);
+		userTextfield.setBounds(89, 137, 174, 22);
 		contentPane.add(userTextfield);
 		userTextfield.setColumns(10);
 		
 		passwordTextfield = new JTextField();
-		passwordTextfield.setBounds(89, 166, 116, 22);
+		passwordTextfield.setBounds(89, 166, 174, 22);
 		contentPane.add(passwordTextfield);
 		passwordTextfield.setColumns(10);
 		

@@ -32,7 +32,7 @@ public class Booking extends javax.swing.JFrame {
 	public Booking() {
 
 		setDefaultCloseOperation(Booking.EXIT_ON_CLOSE);
-		setBounds(100, 100, 905, 400);
+		setBounds(500, 200, 905, 400);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
